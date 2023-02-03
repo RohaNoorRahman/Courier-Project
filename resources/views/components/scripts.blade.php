@@ -63,6 +63,7 @@
 
     var chart = new ApexCharts(document.querySelector("#barChart"), options);
     var chart2 = new ApexCharts(document.querySelector("#barChart2"), options);
+    var chart2 = new ApexCharts(document.querySelector("#barChart3"), options);
     chart.render();
     chart2.render();
 </script>
@@ -257,4 +258,28 @@
     var chart = new ApexCharts(document.querySelector("#stackedChart"), options);
     chart.render();
 
+</script>
+
+<script>
+     var options = {
+          series: [44, 55, 41, 17, 15],
+          chart: {
+          type: 'donut',
+        },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom',
+              horizontalAlign: 'center',
+            }
+          }
+        }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartdonut"), options);
+        chart.render();
 </script>
