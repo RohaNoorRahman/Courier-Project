@@ -24,15 +24,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // User::factory(20)->create();
-        // Address::factory(20)->create();
-        // customer::factory(20)->create();
-        // receiver::factory(20)->create();
-        // Branch::factory(20)->create();
-        // Employee::factory(20)->create();
-        // Vehicle::factory(20)->create();
-        // Package::factory(20)->create();
-        // Payment::factory(20)->create();
+        User::factory(20)->create();
+        Address::factory(20)->create();
+        customer::factory(20)->create();
+        receiver::factory(20)->create();
+        Branch::factory(20)->create();
+        Employee::factory(20)->create();
+        Vehicle::factory(20)->create();
+        Package::factory(20)->create();
+        Payment::factory(20)->create();
         Shipment::factory(20)->create();
 
 
